@@ -80,7 +80,9 @@ int main(void)
         }
 
         // If the robot2_counter isn't null we compute the ratio
-        double ratio = (robot2_counter > 0.0) ? (robot1_counter / robot2_counter) : std::numeric_limits<double>::infinity();
+        double ratio = (robot2_counter > 0.0) ? 
+				(robot1_counter / robot2_counter) :
+				std::numeric_limits<double>::infinity();
 
         // We check if the current ratio is closer to one than the best ratio so far (this because we want a 50-50 competition)
         if (std::abs(1.0 - ratio) < std::abs(1.0 - best_distance.ratio))
