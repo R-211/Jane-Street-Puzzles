@@ -71,7 +71,7 @@ int main(void)
 
         double robot1_counter{ 0 }, robot2_counter{ 0 };
 
-        for (std::size_t j = 0; j < NUMBER_OF_ITERATIONS; ++j)
+        for (std::size_t j{ 0 }; j < NUMBER_OF_ITERATIONS; ++j)
         {
             Winner winner = simulate(i);
 
